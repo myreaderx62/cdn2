@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="en" />
+	<meta name="description" content="Come here to rest! Some people, some culture : only love" />
+        <title>The website that makes you mmmh!</title>
+	<meta name="author" content="Charles de Noyelle" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="alternate" type="application/rss+xml" title="Le saviez-vous !" href="https://feeds.feedburner.com/Spontex-Did-You-Know" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="https://static.spontex.org/imgs/favicon.ico" />
+	<link rel="mask-icon" href="https://static.spontex.org/imgs/favicon.svg" color="#3763A6" />
+	<link rel="apple-touch-icon" sizes="57x57" href="https://static.spontex.org/imgs/favicon/apple-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="https://static.spontex.org/imgs/favicon/apple-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="https://static.spontex.org/imgs/favicon/apple-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="https://static.spontex.org/imgs/favicon/apple-icon-76x76.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="https://static.spontex.org/imgs/favicon/apple-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="https://static.spontex.org/imgs/favicon/apple-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="https://static.spontex.org/imgs/favicon/apple-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="152x152" href="https://static.spontex.org/imgs/favicon/apple-icon-152x152.png"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="https://static.spontex.org/imgs/favicon/apple-icon-180x180.png"/>
+	<link rel="icon" type="image/png" sizes="192x192"  href="https://static.spontex.org/imgs/favicon/android-icon-192x192.png"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="https://static.spontex.org/imgs/favicon/favicon-32x32.png"/>
+	<link rel="icon" type="image/png" sizes="96x96" href="https://static.spontex.org/imgs/favicon/favicon-96x96.png"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="https://static.spontex.org/imgs/favicon/favicon-16x16.png"/>
+	<link rel="manifest" href="https://static.spontex.org/imgs/favicon/manifest.json"/>
+	<meta name="msapplication-config" content="https://static.spontex.org/imgs/favicon/browserconfig.xml"/>
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="https://static.spontex.org/imgs/favicon/ms-icon-144x144.png"/>
+
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="335546094468-hjtfa65qoc55a768g128oc6bu3ju44ba.apps.googleusercontent.com" />
+
+	
+	<link type="text/css" rel="stylesheet" media="all" href="https://static.spontex.org/css/style/desktop-2020-02-26.css" />
+
+	
+	<link href="https://static.spontex.org/fontawesome/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet" />
+	<script type="text/javascript" src="https://static.spontex.org/js/jquery-3.4.1.min.js"></script>
+	<link type="text/css" rel="stylesheet" media="all" href="https://static.spontex.org/js/jquery-ui-1.12.1/jquery-ui.min.css"/>
+	
+		<script type="text/javascript" src="https://static.spontex.org/js/tools-spontex-logged-out.js"></script>
+	
+	
+    </head>
+    	<body>
+
+
+	<div id="login_form">
+			<div id="close_login">
+				<a href="Javascript:login_close();"><i class="fas fa-window-close"></i> Fermer</a>
+			</div>
+			<div id="acces_interdit">
+				<h1><i class="fas fa-exclamation-triangle"></i> Login</h1>
+				You've been logged-out from spontex.
+			</div>
+			<h1><i class="fas fa-user-check"></i>Authenticate</h1>
+		<div class="messages_lus">
+			<span class="txtlogin">
+				Your spontex.org account
+			</span>
+		</div>
+		
+		<br /><br />
+		<form method="post" action="/accounts/login/">
+			<table>
+				<tr>
+					<td><label for="id_username">Utilisateur :</label></td>
+					<td><input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" required id="id_username"></td>
+				</tr>
+				<tr>
+					<td><label for="id_password">Mot de passe :</label></td>
+					<td><input type="password" name="password" autocomplete="current-password" required id="id_password"></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" class="login-button" value="Login" />
+						<input type="hidden" name="next" value="/" />
+					</td>
+				</tr>
+			</table>
+		</form>
+		<br /><br />
+
+		<div class="messages_lus">
+			<span class="txtlogin">
+				Or
+			</span>
+		</div>
+		
+		<br /><br />
+			<div class="g-signin2" data-onsuccess="onSignIn"></div>
+		<br /><br />
+
+		<div class="messages_nonlus">
+			<span class="txtlogin">
+				New here?
+			</span>
+		</div>
+		<br /><br />
+			<a href="/accounts/create/" class="sinscrire">Create an account</a>
+		<br /><br/>
+
+		<div class="messages_nonlus">
+			<span class="txtlogin">
+				Données personnelles ?
+			</span>
+		</div>
+		<p class="small">Information on this website is public but you have to be logged-in to share. Login, means "give a username and a password". Then, you'll be able to fill some more but nothing is mandatory. If you can read this, it means you clicked on something restricted to logged-in. NOBODY DIED registring here. If you wish not to register, feel free, but don't click on that link again :-)</p>
+	</div>
+
+		<div id="meta-wrap-top"><div id="wrap-top">
+			<div id="titre"><a href="/"><img src="https://static.spontex.org/css/style/imgs/titre.jpeg" title="spontex.org" id="logosptx" alt="Titre" /></a></div>
+			<div id="titre-mobile"><a href="/">spontex.org</a></div>
+			<div id="tools-titre">
+				
+					<a id="username" href='Javascript:login_open()' title="Login/create an account!">Login!</a>
+				
+				<a href="Javascript:rechercher();"><img src="https://static.spontex.org/css/style/imgs/recherche.png" alt="Search on spontex.org" title="Search on spontex.org" /></a>
+				<a class="changelangue" href="//fr.spontex.org/"><img src="https://static.spontex.org/css/style/imgs/fr-small-gris.png" onmouseover="this.src='https://static.spontex.org/css/style/imgs/fr-small.png';" onmouseout="this.src='https://static.spontex.org/css/style/imgs/fr-small-gris.png';" alt="Spontex en français" title="Spontex en français"/></a>
+				<a class="changelangue" href="//en.spontex.org/"><img src="https://static.spontex.org/css/style/imgs/en-small-gris.png" onmouseover="this.src='https://static.spontex.org/css/style/imgs/en-small.png';" onmouseout="this.src='https://static.spontex.org/css/style/imgs/en-small-gris.png';" alt="Spontex in english"  title="Spontex in english"/></a>
+				
+			</div>
+			<div id="recherche-wrap">
+				<div id="recherche">
+					<form name="formRecherche" action="https://www.google.fr/cse" method="get" id="cse-search-box" target="_blank">
+						<input type="submit" name="sa" value="Go !" id="recherche-submit"/>
+						<input type="text" name="q" value="Rechercher" onfocus="if(this.value=='Rechercher')this.value='';" onblur="if(this.value=='')this.value='Rechercher';" id="recherche-input"/>
+						<input type="hidden" name="cx" value="partner-pub-4436164338035655:vilzcg-dqyk" />
+						<input type="hidden" name="ie" value="UTF-8" />
+					</form>
+				</div>
+			</div>
+		</div></div>
+		<div id="meta-wrap-pl">
+			<div id="pl">
+				Please share those informations... but do not forget to add a link to spontex!
+			</div>
+			<div id="pop_up">
+				you should never read that.
+			</div>
+		</div>
+		<div id="meta-wrap-main">
+			<div id="menus">
+				<a href="/naviguer_le_saviez_vous/1/" class="menu-o">DYK</a>
+				<a href="/forum/" class="menu" id="menu_forum">Forum</a>
+				<a href="/shoutbox/" class="menu" id="menu_shoutbox">Shoutbox</a>
+				<a href="/faq/" class="menu">F.A.Q</a>
+				<a href="/glander/1/" class="menu">Spots</a>
+				<a href="/tests/" class="menu">Quizz</a>
+				<a href="/news/" class="menu">News</a>
+				<a href="/participer/lsv/" class="menu">Moderation</a>
+				<a href="/tracker/open/" class="menu-c">Bugs</a>
+			</div>
+			<div id="main">
+				
+	
+	
+	<script type="text/javascript">
+		var en_cours = false; var cur = 0; var update = 0; var still_fetching = false;
+		var lsvs = [["For pleasure","\u003Cp\u003EThis is a useless \u003Cspan class\u003D\u0022caps\u0022\u003EDYK\u003C/span\u003E and that is a good reason to like it.\u003C/p\u003E", "/le_saviez_vous/548/totally-useless-dyk", 548]];
+		$(document).ready(function(){fetch_lsv();});
+		function delay() 
+		{
+			return 1000 + Math.floor (Math.random()* 100);
+		}
+		function retry_connect() 
+		{
+			fetch_lsv ();
+			goleft();
+		}
+		function display_lsv () 
+		{
+			if (cur >= lsvs.length )
+				cur = lsvs.length - 1;
+
+			$("#lsvaccueil").html ("<h1>"+lsvs[cur][0]+"</h1>"+lsvs[cur][1]+"<a id=\"lire-suite\"href=\""+lsvs[cur][2]+"\"><img src=\"https://static.spontex.org/css/style/imgs/apprendre-davantage-en.png\" alt=\"Know more\" /></a>");
+		}
+		function fetch_lsv ()
+		{
+			if(still_fetching)
+				return;
+			if ( ((lsvs.length - cur) < 10) && ( lsvs[lsvs.length-1][3] >= 0) )
+				do_fetch_lsv ();
+		}
+		function do_fetch_lsv ()
+		{
+			still_fetching = true;
+			$("#loading").fadeIn("slow");
+			var request = $.ajax({
+                                url: "/android/random/",
+                                dataType: "json"});
+                        request.done ( function(msg) {
+				$("#loading").fadeOut("slow");
+				var added = 0;
+				for (var i=0;i<msg.length;i++) {
+					var double = false;
+					for (var j = 0;j<lsvs.length;j++) {
+						if ( lsvs[j][3] == msg[i].id ) {
+							double = true; break;
+						}
+					}
+					if ( ! double ) {
+						added++; lsvs.push ( [msg[i].titre, msg[i].resume, msg[i].url.replace("http:", ""), msg[i].id] );
+					}
+				}
+				if (added == 0 && (lsvs[lsvs.length - 1][3] != -1)) {
+					lsvs.push (["More DYKs!", "The loading of 10 DYK have made NO new. It's possible you've already loaded a bunch of them, or you're pretty unlucky... Or you voted for (almost) every DYKs : it's advised to vote for the few you didn't, if that's the case.", "/le_saviez_vous/random/", -1]);
+				}
+				if (cur < ( lsvs.length - 1) )
+					$("#lsvaccueil-fleche-d").fadeIn("slow");
+				still_fetching = false;
+                       	});
+                        request.fail ( function(x, e) {
+				if ( lsvs[lsvs.length - 1][3] == 0 ) {
+					lsvs.pop();
+				}
+				still_fetching = false;
+				$("#loading").fadeOut("slow");
+				lsvs.push(["CONNEXION TROUBLE", "The connexion to the server has failed :please <a href='Javascript:retry_connect();'>retry</a>!", "/le_saviez_vous/548/totally-useless-dyk", 0]);
+				if (cur < ( lsvs.length - 1) )
+					$("#lsvaccueil-fleche-d").fadeIn("slow");
+                        });
+		}
+		function goleft()
+		{
+			if (en_cours)
+				return;
+			if (cur <= 0) {
+				return;
+			}
+			en_cours = true;
+			$("#lsvaccueil-fleche-g").fadeOut("slow");
+			cur--;
+
+			$("#lsvaccueil").fadeOut("Slow");
+			fetch_lsv();
+			var done = 0;
+			$('#droite-creator').append('<img src="https://static.spontex.org/css/style/imgs/ampoule-droite.png" alt="A luminous idea" id="ampoule15" />');
+			$('#ampoule11').remove();
+
+			$("#lsvaccueil-light").fadeIn(1000);
+
+			$('#ampoule1').animate({
+			    opacity: '.75',
+			    top: '120px',
+			    width: '110px',
+			    left: '230px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				finiback(done);
+			});
+			$('#ampoule2').animate({
+			    opacity: '.50',
+			    top: '110px',
+			    width: '60px',
+			    left: '170px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				finiback(done);
+			});
+			$('#ampoule3').animate({
+			    opacity: '.25',
+			    top: '95px',
+			    width: '40px',
+			    left: '120px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				finiback(done);
+			});
+			$('#ampoule4').animate({
+			    opacity: '0',
+			    top: '82px',
+			    width: '30px',
+			    left: '100px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				finiback(done);
+			});
+
+			$('#ampoule12').animate({
+			    opacity: '1',
+			    top: '120px',
+			    width: '150px',
+			    right: '330px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				finiback(done);
+			});
+			$('#ampoule13').animate({
+			    opacity: '.75',
+			    top: '120px',
+			    width: '110px',
+			    right: '230px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				finiback(done);
+			});
+			$('#ampoule14').animate({
+			    opacity: '.50',
+			    top: '110px',
+			    width: '60px',
+			    right: '170px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				finiback(done);
+			});
+			$('#ampoule15').animate({
+			    opacity: '.25',
+			    top: '95px',
+			    width: '40px',
+			    right: '120px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				finiback(done);
+			});
+		}
+
+		function goright()
+		{
+			if (en_cours) {
+				return;
+			}
+			if ( cur > (lsvs.length -1) ) {
+				return;
+			}
+			$("#lsvaccueil-fleche-d").fadeOut("slow");
+			cur++;
+
+			en_cours = true;
+
+			$("#lsvaccueil").fadeOut("Slow");
+			fetch_lsv();
+
+			var done = 0;
+			$('#ampoule1').remove();
+			$('#gauche-creator').append('<img src="https://static.spontex.org/css/style/imgs/ampoule-gauche.png" alt="A luminous idea" id="ampoule5" />');
+
+			$("#lsvaccueil-light").fadeIn(1000);
+			
+			$('#ampoule2').animate({
+			    opacity: '1',
+			    top: '120px',
+			    width: '150px',
+			    left: '330px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				fini(done);
+			});
+			$('#ampoule3').animate({
+			    opacity: '.75',
+			    top: '120px',
+			    width: '110px',
+			    left: '230px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				fini(done);
+			});
+			$('#ampoule4').animate({
+			    opacity: '.50',
+			    top: '110px',
+			    width: '60px',
+			    left: '170px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				fini(done);
+			});
+			$('#ampoule5').animate({
+			    opacity: '.25',
+			    top: '95px',
+			    width: '40px',
+			    left: '120px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				fini(done);
+			});
+
+			$('#ampoule11').animate({
+			    opacity: '.75',
+			    top: '120px',
+			    width: '110px',
+			    right: '230px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				fini(done);
+			});
+			$('#ampoule12').animate({
+			    opacity: '.50',
+			    top: '110px',
+			    width: '60px',
+			    right: '170px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				fini(done);
+			});
+			$('#ampoule13').animate({
+			    opacity: '.25',
+			    top: '95px',
+			    width: '40px',
+			    right: '120px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				fini(done);
+			});
+			$('#ampoule14').animate({
+			    opacity: '0',
+			    top: '82px',
+			    width: '30px',
+			    right: '100px'}, delay(), function() {
+			        // Animation complete.
+				done++;
+				fini(done);
+			});
+		}
+		function finiback (nbr)
+		{
+			if (nbr < 8) {
+				return false;
+			}
+			$("#lsvaccueil-light").fadeOut("slow");
+
+			$('#ampoule4').remove();
+
+			$('#ampoule3').attr("id", "ampoule4");
+			$('#ampoule2').attr("id", "ampoule3");
+			$('#ampoule1').attr("id", "ampoule2");
+
+			$('#ampoule12').attr("id", "ampoule11");
+			$('#ampoule13').attr("id", "ampoule12");
+			$('#ampoule14').attr("id", "ampoule13");
+			$('#ampoule15').attr("id", "ampoule14");
+
+																     $('#gauche-creator').append('<img src="https://static.spontex.org/css/style/imgs/ampoule-gauche.png" alt="A luminous idea" id="ampoule1" />');
+
+			display_lsv();
+
+			$("#lsvaccueil").fadeIn("slow");
+			if (cur > 0 ) {
+				$("#lsvaccueil-fleche-g").fadeIn("slow");
+			}
+			if ( cur < (lsvs.length -1 ) ) {
+				$("#lsvaccueil-fleche-d").fadeIn("slow");
+			}
+			en_cours = false;
+		}
+		function fini (nbr) 
+		{
+			$("#lsvaccueil-light").fadeOut("slow");
+			if (nbr < 8) {
+				return false;
+			}
+
+			$('#ampoule14').remove();
+
+			$('#ampoule2').attr("id", "ampoule1");
+			$('#ampoule3').attr("id", "ampoule2");
+			$('#ampoule4').attr("id", "ampoule3");
+			$('#ampoule5').attr("id", "ampoule4");
+
+			$('#ampoule13').attr("id","ampoule14");
+			$('#ampoule12').attr("id","ampoule13");
+			$('#ampoule11').attr("id","ampoule12");
+
+																		       $('#droite-creator').append('<img src="https://static.spontex.org/css/style/imgs/ampoule-droite.png" alt="A luminous idea" id="ampoule11" />');
+
+			display_lsv();
+
+			$("#lsvaccueil").fadeIn("slow");
+
+			en_cours = false;
+			if (cur > 0 ) {
+				$("#lsvaccueil-fleche-g").fadeIn("slow");
+			}
+			if ( cur < (lsvs.length -1 ) ) {
+				$("#lsvaccueil-fleche-d").fadeIn("slow");
+			}
+		}
+	</script>
+	<div class="wrap-ampoule" id="gauche-creator"> 
+			<img src="https://static.spontex.org/css/style/imgs/ampoule-gauche.png" alt="A luminous idea" id="ampoule1" />
+			<img src="https://static.spontex.org/css/style/imgs/ampoule-gauche.png" alt="A luminous idea" id="ampoule2" />
+			<img src="https://static.spontex.org/css/style/imgs/ampoule-gauche.png" alt="A luminous idea" id="ampoule3" />
+			<img src="https://static.spontex.org/css/style/imgs/ampoule-gauche.png" alt="A luminous idea" id="ampoule4" />
+		</div>
+		<div class="wrap-ampoule">
+			<div id="loading">
+				<img src="https://static.spontex.org/css/style/imgs/ajax-loader.gif" alt="Loading" />
+			</div>
+			<div id="lsvaccueil-fleche-d">
+				<a href="Javascript:goright();"><img src="https://static.spontex.org/css/style/imgs/lsv-suivant.png" alt="Previous DYK" /></a>
+			</div>
+			<div id="lsvaccueil-fleche-g">
+				<a href="Javascript:goleft();"><img src="https://static.spontex.org/css/style/imgs/lsv-precedent.png" alt="Next DYK" /></a>
+			</div>
+			<div id="lsvaccueil-wrap">
+				<div id="lsvaccueil-light">&nbsp;</div>
+				<div id="lsvaccueil">
+					<h1>For pleasure</h1>
+					<p>This is a useless <span class="caps">DYK</span> and that is a good reason to like it.</p>
+					<a id="lire-suite"href="/le_saviez_vous/548/totally-useless-dyk"><img src="https://static.spontex.org/css/style/imgs/apprendre-davantage-en.png" alt="Know more" /></a>
+				</div>
+			</div>
+		</div>
+		<div class="wrap-ampoule" id="droite-creator">
+			<img src="https://static.spontex.org/css/style/imgs/ampoule-droite.png" alt="A luminous idea" id="ampoule11" />
+			<img src="https://static.spontex.org/css/style/imgs/ampoule-droite.png" alt="A luminous idea" id="ampoule12" />
+			<img src="https://static.spontex.org/css/style/imgs/ampoule-droite.png" alt="A luminous idea" id="ampoule13" />
+			<img src="https://static.spontex.org/css/style/imgs/ampoule-droite.png" alt="A luminous idea" id="ampoule14" />
+		</div>
+
+
+
+			</div>
+		</div>
+		
+		<div id="meta-wrap-sponsor">
+			<div id="sponsor">
+				<img src="https://static.spontex.org/css/style/imgs/sponsor-soutien-fr.jpeg" alt="Spontex.org supports..." class="imgsoutien" />
+				<a href="http://www.leriremedecin.org/"><img src="https://static.spontex.org/tmp/sponsor-lrm.jpeg" alt="Le rire médecin" class="imgsoutien" /></a>
+				<div id="sponsor-laius">
+					<a href=\"http://www.leriremedecin.org/\">Le rire médecin</a> is a charity that provides clowns to hospitals, in order to divert young children (and their sibblings) from the sutuation they're in.
+				</div>
+			</div>
+		</div>
+		<div id="meta-wrap-bottom">
+			<div id="bottom">
+				<div class="boiboite" id="boiboite1">
+				</div>
+				<div class="boiboite" id="boiboite2">
+				</div>
+				<div class="boiboite" id="boiboite3">
+				</div>
+				<div class="boiboite" id="boiboite4">
+				</div>
+			</div>
+			<div id="copyright">
+				&copy; <a href="/faq/#plagiat">Please do not plagiarize us</a> - contact&#64;spontex.org
+			</div>
+		</div>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1320962-1']);
+_gaq.push(['_setDomainName', 'spontex.org']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+$('#bottom').load("/accueil/b/");
+</script>
+	</body>
+</html>
